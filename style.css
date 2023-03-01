@@ -1,0 +1,217 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  background: url("./images/bright-gf501e18a7_1920.jpg");
+  background: url("./images/pexels-frans-van-heerden-1022692.jpg");
+background-position: -260px -200px ;
+overflow: hidden;
+}
+.clock {
+  height: 200px;
+  width: 200px;
+  border-radius: 150px;
+  border:  2px solid rgb(44, 39, 36);
+  background-color: rgba(255, 255, 255, 0.815);
+  background-size: cover;
+  position: absolute;
+  left: 530px;
+  top: 240px;
+  scale: 1.5;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.801);
+  z-index: 999;
+  transition-property: scale ;
+  transition-duration: 1s;
+  transition-timing-function: cubic-bezier(0, 0.8, 0.5, 1);
+}
+.clock:hover{
+  scale: 2;
+  cursor:pointer;
+}
+.inner-circle {
+background-color: rgba(43, 43, 43, 0.336);
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  position: absolute;
+
+  border: 1px solid rgb(5, 5, 5);
+  box-shadow: -3px -3px 8px rgba(0, 0, 0, 0.315),
+    3px 3px 8px rgba(0, 0, 0, 0.322);
+  left: 25px;
+  bottom: 25px;
+}
+
+.seconds-hand {
+  position: absolute;
+  left: 100px;
+  bottom: 100px;
+  height: 65px;
+  width: 2px;
+  background-color: rgb(0, 24, 61);
+  transform-origin: 0% 100%;
+  opacity: 50%;
+  border-radius: 5px 5px 0 0;
+  box-shadow: 1px 1px 3px  rgb(0, 47, 117);
+}
+
+
+.minutes-hand {
+  height: 60px;
+  width: 2px;
+  position: absolute;
+  left: 100px;
+  bottom: 100px;
+  transform-origin: 0% 100%;
+  border-radius: 5px 5px 0 0;
+  background-color: rgb(57, 0, 133);
+  box-shadow: 1px 1px 3px  rgb(54, 0, 126);
+}
+.hours-hand {
+  height: 40px;
+  width: 2px;
+  position: absolute;
+  left: 102px;
+  bottom: 100px;
+  transform-origin: 0% 100%;
+  background-color: rgb(14, 0, 54);
+  border-radius: 5px 5px 0 0;
+  box-shadow: 1px 1px 3px  rgb(14, 0, 54);
+}
+.center {
+  height: 7px;
+  width: 7px;
+  transform: rotate(45deg);
+  background-color: #272727;
+  position: absolute;
+  left: 96px;
+  bottom: 96px;
+  transition:all  linear;
+ animation: rotate 30s infinite linear;
+ box-shadow: 3px 3px 3px  #00000042;
+}
+
+@keyframes rotate {
+ 100%{ 
+  transform: rotate(360deg);
+}
+}
+
+.center::after {
+  content: "";
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  position: absolute;
+  left: -50%;
+  background-color: #272727;
+}
+.center::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  position: absolute;
+  right: 0;
+  top: -50%; 
+  border-radius: 50%;
+  background-color: #272727;
+}
+
+.number {
+  --rotation: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transform: rotate(var(--rotation));
+  text-shadow:0 0  5px white;
+}
+.number-1 {
+  --rotation: 30deg;
+}
+.number-2 {
+  --rotation: 60deg;
+}
+.number-3 {
+  --rotation: 90deg;
+}
+.number-4 {
+  --rotation: 120deg;
+}
+.number-5 {
+  --rotation: 150deg;
+}
+.number-6 {
+  --rotation: 180deg;
+}
+.number-7 {
+  --rotation: 210deg;
+}
+.number-8 {
+  --rotation: 240deg;
+}
+.number-9 {
+  --rotation: 270deg;
+}
+.number-10 {
+  --rotation: 300deg;
+}
+.number-11 {
+  --rotation: 330deg;
+}
+.number-12 {
+  --rotation: 360deg;
+}
+
+.clock-word{
+ /* font-family:sans-serif; */
+}
+.c1{
+  font-size: 22rem;
+  color:white;
+  position:relative;
+  left: -400px;
+  top: 200px;
+}
+.l{
+  font-size: 20rem;
+  color:white;
+  position:relative;
+  left: -390px;
+  top: 200px;
+}
+.c2{
+  font-size: 22rem;
+  color:white;
+  position:relative;
+  left: 360px;
+  top: -200px;
+
+}
+.k{  
+  font-size: 22rem;
+  color:white;
+  position:relative;
+  left: 390px;
+  top: -200px;
+
+}
+.footer{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 2rem;
+  color: white;
+  position: absolute;
+  bottom: 0px;
+  word-spacing: 30px;
+  background-color: rgba(0, 34, 146, 0.11);
+  width: 100%;
+  text-align: center;
+  text-shadow: 5px 5px 5px black;
+    
+  font-family: 'Satisfy', cursive;
+
+}
