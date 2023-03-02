@@ -34,5 +34,5 @@ setInterval(getTime, 100);
 
 setInterval(function () {
    new Audio('Sound/clock-ticking-natural-room-verb-17249 (mp3cut.net).mp3').play();
-}, 500)
+}, 1000)
 
