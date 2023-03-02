@@ -17,7 +17,8 @@ It is deployed using Netlify
 
 ## Screenshots
 
-![clock-wall](https://user-images.githubusercontent.com/100681165/222365204-900e740c-69e5-4347-8466-bb21289c2532.png)
+![room-clock](https://user-images.githubusercontent.com/100681165/222366560-8931a981-4d12-4aab-9ecb-f0c5b75048ba.png)
+
 
 ## Features
 
